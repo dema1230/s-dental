@@ -178,47 +178,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* Working hours */}
-            <div
-              className="p-5 rounded-xl border"
-              style={{ borderColor: "var(--border)", background: "var(--cream)" }}
-            >
-              <div className="flex items-center gap-2 mb-4">
-                <div
-                  className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ background: "var(--teal-pale)" }}
-                >
-                  <Clock size={18} style={{ color: "var(--teal-deep)" }} />
-                </div>
-                <div
-                  className="text-xs font-semibold"
-                  style={{ fontFamily: "'DM Sans', sans-serif", color: "var(--slate-light)", letterSpacing: "0.08em", textTransform: "uppercase" }}
-                >
-                  Radno vrijeme
-                </div>
-              </div>
-              <div className="space-y-2">
-                {workingHours.map(({ day, hours, open }) => (
-                  <div key={day} className="flex justify-between items-center">
-                    <span
-                      className="text-sm"
-                      style={{ fontFamily: "'DM Sans', sans-serif", color: "var(--slate-mid)" }}
-                    >
-                      {day}
-                    </span>
-                    <span
-                      className="text-sm font-medium"
-                      style={{
-                        fontFamily: "'DM Sans', sans-serif",
-                        color: open ? "var(--teal-deep)" : "#ef4444",
-                      }}
-                    >
-                      {hours}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
+
           </div>
 
           {/* Right: Map (2 cols) */}
