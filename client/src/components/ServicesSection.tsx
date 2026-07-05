@@ -14,7 +14,6 @@ const services = [
     title: "Estetska stomatologija",
     desc: "Bijeljenje zuba, keramičke fasete, kompozitni ispuni. Savršen osmijeh koji odražava vaš karakter.",
     highlight: true,
-    price: "od 50 KM",
     tag: "Najpopularnije",
   },
   {
@@ -22,7 +21,6 @@ const services = [
     title: "Ortodoncija",
     desc: "Fiksni i mobilni aparati za djecu i odrasle. Moderna rješenja za ravne zube i pravilan zagrižaj.",
     highlight: false,
-    price: "od 800 KM",
     tag: null,
   },
   {
@@ -30,7 +28,6 @@ const services = [
     title: "Preventivna njega",
     desc: "Profesionalno čišćenje, uklanjanje kamenca, fluoridacija. Zdrava usta su osnova lijepog osmijeha.",
     highlight: false,
-    price: "od 30 KM",
     tag: "Preporučeno",
   },
   {
@@ -38,7 +35,6 @@ const services = [
     title: "Oralna hirurgija",
     desc: "Vađenje zuba, impakcija umnjaka, manje hirurške intervencije uz maksimalnu sigurnost i udobnost.",
     highlight: false,
-    price: "od 40 KM",
     tag: null,
   },
   {
@@ -46,7 +42,6 @@ const services = [
     title: "Protetika",
     desc: "Fiksne i mobilne proteze, krunice, mostovi. Vraćamo funkcionalnost i estetiku vašeg osmijeha.",
     highlight: false,
-    price: "od 150 KM",
     tag: null,
   },
   {
@@ -54,7 +49,6 @@ const services = [
     title: "Dječija stomatologija",
     desc: "Poseban pristup za naše najmlađe pacijente. Bezbolni pregledi i liječenje u opuštenoj atmosferi.",
     highlight: false,
-    price: "od 20 KM",
     tag: "Za djecu",
   },
 ];
@@ -152,28 +146,17 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
         {service.desc}
       </p>
 
-      {/* Price + CTA */}
-      <div className="flex items-center justify-between">
-        <span
-          className="text-sm font-semibold"
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            color: service.highlight ? "oklch(0.85 0.08 195)" : "var(--teal-mid)",
-          }}
-        >
-          {service.price}
-        </span>
-        <a
-          href="#zakazivanje"
-          className="flex items-center gap-1 text-sm font-medium transition-all duration-150 hover:gap-2"
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            color: service.highlight ? "white" : "var(--teal-deep)",
-          }}
-        >
-          Zakaži <ArrowRight size={14} />
-        </a>
-      </div>
+      {/* CTA */}
+      <a
+        href="#zakazivanje"
+        className="inline-flex items-center gap-1 text-sm font-medium transition-all duration-150 hover:gap-2"
+        style={{
+          fontFamily: "'DM Sans', sans-serif",
+          color: service.highlight ? "white" : "var(--teal-deep)",
+        }}
+      >
+        Zakaži <ArrowRight size={14} />
+      </a>
     </div>
   );
 }
