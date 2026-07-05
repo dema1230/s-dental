@@ -62,13 +62,13 @@ export default function ContactSection() {
   };
 
   const workingHours = [
-    { day: "Ponedjeljak", hours: "09:00 – 17:00", open: true },
-    { day: "Utorak", hours: "09:00 – 17:00", open: true },
-    { day: "Srijeda", hours: "09:00 – 17:00", open: true },
-    { day: "Četvrtak", hours: "09:00 – 17:00", open: true },
-    { day: "Petak", hours: "09:00 – 17:00", open: true },
-    { day: "Subota", hours: "09:00 – 14:00", open: true },
-    { day: "Nedjelja", hours: "Zatvoreno", open: false },
+    { day: "Ponedjeljak", hours: "08:00 – 20:00", open: true },
+    { day: "Utorak", hours: "08:00 – 20:00", open: true },
+    { day: "Srijeda", hours: "08:00 – 20:00", open: true },
+    { day: "Četvrtak", hours: "08:00 – 20:00", open: true },
+    { day: "Petak", hours: "08:00 – 20:00", open: true },
+    { day: "Subota", hours: "08:00 – 20:00", open: true },
+    { day: "Nedjelja", hours: "10:00 – 15:00", open: true },
   ];
 
   return (

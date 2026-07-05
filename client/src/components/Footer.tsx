@@ -127,13 +127,13 @@ export default function Footer() {
                     className="text-sm"
                     style={{ fontFamily: "'DM Sans', sans-serif", color: "oklch(1 0 0 / 0.55)" }}
                   >
-                    Pon–Pet: 09:00 – 17:00
+                    Pon–Sub: 08:00 – 20:00
                   </div>
                   <div
                     className="text-sm"
                     style={{ fontFamily: "'DM Sans', sans-serif", color: "oklch(1 0 0 / 0.55)" }}
                   >
-                    Subota: 09:00 – 14:00
+                    Nedjelja: 10:00 – 15:00
                   </div>
                 </div>
               </div>
